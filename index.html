@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="Email">Email:</label><br />
+      <input type="email" />
+
+      <div>
+        Password:<br />
+        <input
+          type="password"
+          id="pass"
+          name="password"
+          minlength="6"
+          required
+        />
+      </div>
+      <div>
+        <label for="Username">Github Username</label><br />
+        <input type="text" />
+      </div>
+      <div>
+        <fieldset>
+          <legend>Type of Membership</legend>
+          <input
+            type="radio"
+            id="Type-Enterprise"
+            name="Membership"
+            value="Enterprise"
+          />
+          <label for="Type-Enterprise">Enterprise</label><br />
+          <input type="radio" id="Type-Pro" name="Membership" value="Pro" />
+          <label for="Type-Pro">Pro</label><br />
+          <input type="radio" id="Type-Free" name="Membership" value="Free" />
+          <label for="Type-Free">Free</label>
+        </fieldset>
+      </div>
+      <div>
+        <input type="checkbox" />
+        <label for="Reminder">Remember Me</label>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
